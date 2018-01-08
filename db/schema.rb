@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20180105173700) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "favorite_poems", force: :cascade do |t|
+  create_table "favorited_poems", force: :cascade do |t|
     t.integer "user_id"
     t.integer "poem_id"
     t.datetime "created_at", null: false

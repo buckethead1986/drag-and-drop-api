@@ -1,4 +1,4 @@
-class FavoritePoem < ApplicationRecord
+class FavoritedPoem < ApplicationRecord
   belongs_to :poem
   belongs_to :user
 end
