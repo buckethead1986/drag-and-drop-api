@@ -54,7 +54,9 @@ ActiveRecord::Schema.define(version: 20180105173700) do
   end
 
   create_table "words", force: :cascade do |t|
-    t.string "word"
+    t.string "title"
+    t.integer "top"
+    t.integer "left"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
