@@ -9,9 +9,9 @@ user_one = User.create(username: 'Robert', password: 'test')
 user_two = User.create(username: 'Sarah', password: 'test')
 user_three = User.create(username: 'Alex', password: 'test')
 
-word_one = Word.create(top: 20, left: 40, title: "there")
-word_two = Word.create(top: 40, left: 40, title: "are")
-word_three = Word.create(top: 60, left: 40, title: "things")
+word_one = Word.create( title: "there", zIndex: 0)
+word_two = Word.create( title: "are", zIndex: 0)
+word_three = Word.create( title: "things", zIndex: 0)
 content2 = [word_one.title, word_two.title, word_three.title]
 #javascript, create state of array of word objects, join string of Word.word as content for poem, push Word objects onto poem for api poem.words data
 # content2.forEach(word => poem_one.words << word)
