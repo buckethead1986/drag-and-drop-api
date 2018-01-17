@@ -9,7 +9,7 @@ class Api::V1::PoemWordsController < ActionController::API
   end
 
   def create
-    @poem_word = PoemWord.create(word_id: params[:word_id], poem_id: params[:poem_id])
+    @poem_word = PoemWord.create(poem_word_params)
     render json: @poem_word.to_json
   end
 
