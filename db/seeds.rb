@@ -9,7 +9,8 @@ user_one = User.create(username: 'Robert', password: 'test')
 user_two = User.create(username: 'Sarah', password: 'test')
 user_three = User.create(username: 'Alex', password: 'test')
 
-words = ["there", "are", "things"]
+words = ["there", "are", "things", "a", "single", "none", "won't", "he", "she", "will", "inside", "snowing", "fire", "people", "backward", "maybe", "a", "the", "sea", "tree", "is", "mostly"
+]
 # word_one = Word.create( title: "there")
 # word_two = Word.create( title: "are")
 # word_three = Word.create( title: "things")
@@ -35,5 +36,5 @@ words = ["there", "are", "things"]
 # user_two.following << user_two
 
 words.each do |word|
-  Word.create(title: word)
+  Word.create(title: word, group: 1)
 end
