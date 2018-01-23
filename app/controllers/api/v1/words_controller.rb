@@ -4,7 +4,7 @@ class Api::V1::WordsController < ActionController::API
     render json: @words.to_json
   end
 
-  def create
-    byebug
-  end
+  # def create
+  #   byebug
+  # end
 end

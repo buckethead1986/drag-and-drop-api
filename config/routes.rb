@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       resources :poems, only: [:index, :new, :create, :show]
       resources :users, only: [:index, :new, :create, :show]
       resources :poem_words, only: [:index, :new, :create, :show]
-      resources :relationships, only: [:index, :new, :create, :show]
+      resources :relationships, only: [:index, :new, :create, :show, :destroy]
       post "/auth", to: "sessions#create"
       get "/current_user", to: "sessions#show"
     end
