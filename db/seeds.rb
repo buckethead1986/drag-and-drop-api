@@ -5,12 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-user_one = User.create(username: 'Robert', password: 'test')
-user_two = User.create(username: 'Sarah', password: 'test')
-user_three = User.create(username: 'Alex', password: 'test')
+user_one = User.create(username: 'Robert', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+user_two = User.create(username: 'Sarah', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+user_three = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+
+user_three.following << user_one
 
 words = ["there", "are", "things", "a", "single", "none", "won't", "he", "she", "will", "inside", "snowing", "fire", "people", "backward", "maybe", "a", "the", "sea", "tree", "is", "mostly"
 ]
+
+Poem.create(user_id: 1, content: "10/will/37.5/170")
 # word_one = Word.create( title: "there")
 # word_two = Word.create( title: "are")
 # word_three = Word.create( title: "things")
