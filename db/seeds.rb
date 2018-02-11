@@ -5,14 +5,33 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-user_one = User.create(username: 'Robert', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
-user_two = User.create(username: 'Sarah', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
-user_three = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_one = User.create(username: 'Robert', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_two = User.create(username: 'Sarah', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_three = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_four = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_five = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_six = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_seven = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_eight = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_nine = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_three = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_three = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+# user_three = User.create(username: 'Alex', password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
 
-user_three.following << user_one
+users = ["Robert", "Sarah", "Alex", "Steven", "Sean", "Emily", "Bernard", "Katherine", "Will", "Katie", "Brian", "Lisa"]
+
+users.each do |user|
+  User.create(username: user, password: 'test', image: 'http://www.dltk-kids.com/puzzles/jigsaw/2013/puzzle-images/1222.jpg')
+end
+
+User.all[4].following << User.all[0]
+User.all[6].following << User.all[2]
+User.all[8].following << User.all[4]
 
 words = ["there", "are", "things", "a", "single", "none", "won't", "he", "she", "will", "inside", "snowing", "fire", "people", "backward", "maybe", "a", "the", "sea", "tree", "is", "mostly"
 ]
+
+words2 = ["space", "galaxy", "cosmos", "asteroid", "shuttle", "flew", "rocket", "fiery", "beyond", "infinite", "sun", "star", "planet", "comet"]
 
 Poem.create(user_id: 1, content: "10/will/37.5/170")
 # word_one = Word.create( title: "there")
@@ -40,5 +59,9 @@ Poem.create(user_id: 1, content: "10/will/37.5/170")
 # user_two.following << user_two
 
 words.each do |word|
-  Word.create(title: word, group: 1)
+  Word.create(title: word, group: 1, category: "Simple")
+end
+
+words2.each do |word|
+  Word.create(title: word, group: 2, category: "Space")
 end
