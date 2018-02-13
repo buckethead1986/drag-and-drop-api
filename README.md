@@ -1,24 +1,7 @@
-# README
+This is the Rails Back End API for my React App 'Fridge Magnets'.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's a fun little web clone of those fridge magnet poetry sets you played around with.
 
-Things you may want to cover:
+Check out the app here, and make some silly poems, follow and favorite other users and their creations: https://magnet-fridge.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The API can be found here: https://magnet-fridge-api.herokuapp.com/api/v1/users (other endpoints are /poems, /words, /relationships, /favorited_poems)
