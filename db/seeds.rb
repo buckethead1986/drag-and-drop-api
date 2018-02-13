@@ -43,3 +43,7 @@ end
 music.each do |word|
   Word.create(title: word, group: 5, category: "Music")
 end
+
+science.each do |word|
+  Word.create(title: word, group: 6, category: "Science")
+end
