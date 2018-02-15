@@ -35,6 +35,6 @@ anyone who goes to a route on the following base url:
 https://www.magnets-api.herokuapp.com.
 
 This public accessibility is mirrored in our front-end application.
-https://magnet-fridge.herokuapp.com/
+https://mag-nets.herokuapp.com/
 Users can find all other users and poems through a user index and a poems index respectively.
 Users can see who they follow, can filter poems based on user or by favorites, but not who has followed them.
