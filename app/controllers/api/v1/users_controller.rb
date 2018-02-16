@@ -4,14 +4,6 @@ class Api::V1::UsersController < ActionController::API
     render json: @users.to_json(:include => [:poems, {:favorited_poems => {:include => :poem}}, :followers, :following])
   end
 
-  def new
-
-  end
-
-  def show
-
-  end
-
   def create
     @user = User.create(username: params[:username], password: params[:password], image: params[:image])
     render json: @user.to_json
