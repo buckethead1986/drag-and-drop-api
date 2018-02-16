@@ -3,7 +3,7 @@
 
 
 
-robert = User.create(username: "Robert", password: 'test', image: 'http://www.divebuddy.com/members/photos/pic_1_69507.jpg')
+robert = User.create(username: "Robert", password: 'test', image: 'https://www.divebuddy.com/members/photos/pic_1_69507.jpg')
 karen = User.create(username: "Karen", password: 'test', image: 'https://whydyoueatthat.files.wordpress.com/2012/12/30-cute-puppies-you-will-want-to-take-home-with-you-28.jpg')
 mike = User.create(username: "Mike", password: 'test', image: 'https://i2.wp.com/www.homeandheavens.com/wp-content/uploads/2014/09/Adorable-wrinkly-puppy-pictures_3.jpg?resize=500%2C369')
 stacy = User.create(username: "Stacy", password: 'test', image: 'https://metrouk2.files.wordpress.com/2017/03/512366437.jpg?w=748&h=498&crop=1')
