@@ -23,6 +23,8 @@ music = ["violin", "viola", "cello", "s", "night", "bass", "major", "you", "drum
 science = ["science", "make", "you", "class", "and", "make", "biology", "the", "fire", "chemistry", "temperature", "fahrenheight", "celsius", "the", "kelvin", "physics", "is", "studies", "geology", "wrong", "significant", "figure", "paleontology", "ed", "dinosaur", "s", "test", "right", "archaeology", "break", "work", "experiment", "doesn't", "my", "can", "are", "can't", "micro", "bill", "nye", "the", "science", "guy", "our", "does", "boil", "to", "run", "cell", "s", "and", "neuron", "volcano", "s", "bio", "lab", "study", "data", "research", "degree", "reagent", "result", "publish", "study"]
 
 Poem.create(user_id: 1, content: "70/spider/117/83|60/pig/184/83|58/is/233/82|64/down/268/82|65/inside/136/150|69/the/207/150|53/tree/253/151")
+Poem.create(user_id: 2, content: "382/my/94/88|380/experiment/139/87|393/does/237/88|411/study/287/88|401/volcano/345/87|402/s/407/87|359/fire/95/183|385/can't/145/184|355/make/200/184|386/micro/266/184|373/dinosaur/331/183|398/s/400/183")
+Poem.create(user_id: 3, content: "181/twas/189/63|182/brillig/255/64|184/the/133/108|149/butterfly/174/109|204/read/249/109|205/outside/299/109|183/and/196/158|193/said/244/157|212/hear/100/195|158/the/149/212|161/sounds/186/225|220/a/252/238|178/banana/276/252|222/can/343/268|197/make/382/283")
 Poem.create(user_id: 4, content: "360/chemistry/87/86|357/and/146/126|359/fire/178/163|366/is/208/197|358/biology/227/236")
 
 
