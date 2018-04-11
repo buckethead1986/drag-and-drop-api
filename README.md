@@ -32,7 +32,7 @@ nested attribute in the Users and Poems show and index route.
 This API is public and the only thing that requires authorization is posting to
 the user session in order to login. The rest of the information is accessible to
 anyone who goes to a route on the following base url:
-https://www.magnets-api.herokuapp.com.
+https://magnets-api.herokuapp.com/api/v1/.
 
 This public accessibility is mirrored in our front-end application.
 https://mag-nets.herokuapp.com/
