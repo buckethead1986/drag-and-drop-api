@@ -18,6 +18,11 @@ class Api::V1::PoemsController < ActionController::API
     render json: @poem.to_json
   end
 
+  def destroy
+    @poem = Poem.find_by(id: params[:id])
+    @poem.destroy
+  end
+
 
 
   private

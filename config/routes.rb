@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :words, only: [:index, :new, :create, :show]
-      resources :poems, only: [:index, :new, :create, :show]
+      resources :poems, only: [:index, :new, :create, :show, :destroy]
       resources :users, only: [:index, :new, :create, :show, :update]
       resources :poem_words, only: [:index, :new, :create, :show]
       resources :relationships, only: [:index, :new, :create, :show, :destroy]
