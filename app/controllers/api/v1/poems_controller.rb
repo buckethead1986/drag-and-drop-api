@@ -4,10 +4,6 @@ class Api::V1::PoemsController < ActionController::API
     render json: @poems.to_json(:include => [:favorited_by])
   end
 
-  def new
-
-  end
-
   def show
     @poem = Poem.find_by(id: params[:id])
     render json: @poem.to_json

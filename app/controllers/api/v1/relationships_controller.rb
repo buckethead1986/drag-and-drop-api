@@ -4,10 +4,6 @@ class Api::V1::RelationshipsController < ActionController::API
     render json: @relationships.to_json
   end
 
-  def new
-
-  end
-
   def show
     @relationship = Relationship.find_by(id: params[:id])
     render json: @relationship.to_json
